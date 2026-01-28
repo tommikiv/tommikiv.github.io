@@ -19,7 +19,7 @@ function App() {
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <button className="github-button"><Github size={20} />GitHub</button>
+          <button className="github-button" onClick={() => window.open('https://github.com/tommikiv', '_blank')}><Github size={20} />GitHub</button>
           <button className="theme-button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><SunMoon size={20} /></button>
         </div>
       </div>
