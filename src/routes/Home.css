@@ -4,6 +4,17 @@
     align-items: center;
     justify-content: center;
 
+    .section-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-self: flex-start;
+
+        font-size: 2rem;
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+
     .about {
         display: flex;
         flex-direction: row;
@@ -48,17 +59,10 @@
         }
 
         img {
-            width: 100%;
-            max-width: 250px;
+            width: 350px;
             height: auto;
             border-radius: 20px;
         }
-    }
-
-    .contact-me {
-        border: 2px solid var(--border-color);
-        border-radius: 50px;
-        padding: 1rem 2rem;
     }
 
     .techstack {
@@ -69,19 +73,6 @@
         gap: 2rem;
         width: 100%;
         max-width: 1000px;
-
-        .techstack-title {
-            display: flex;
-            align-items: center;
-
-            font-size: 2rem;
-            gap: 0.5rem;
-            margin-bottom: 0;
-
-            .techstack-icon {
-                animation: rotateLoop 7s linear infinite;
-            }
-        }
 
         .tech-container {
             display: flex;
@@ -106,8 +97,42 @@
                 gap: 1rem;
             }
         }
+
+        .section-title {
+           .techstack-icon {
+                animation: rotateLoop 10s linear infinite;
+           }
+        }
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 100%;
+        max-width: 1000px;
+        margin: 4rem;
+    
+        .project {
+            margin-top: 2rem;
+        }
+
+        .section-title {
+            .folder-icon {
+                animation: rotationShake 2s ease-in-out infinite;
+            }
+        }
+    }
+
+    .contact {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 }
+
 
 @keyframes rotateLoop {
     from {
@@ -115,5 +140,17 @@
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationShake {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }

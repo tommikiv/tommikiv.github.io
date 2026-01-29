@@ -16,9 +16,9 @@ function App() {
       <div className="app-header">
         <h2 className="title">Tommi Kivikangas</h2>
         <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a>
+          <a href="#projects" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: document.getElementById('projects')?.offsetTop, behavior: 'smooth' }); }}>Projects</a>
+          <a href="#contact" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: document.getElementById('contact')?.offsetTop, behavior: 'smooth' }); }}>Contact</a>
           <button className="github-button" onClick={() => window.open('https://github.com/tommikiv', '_blank')}><Github size={20} />GitHub</button>
           <button className="theme-button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><SunMoon size={20} /></button>
         </div>

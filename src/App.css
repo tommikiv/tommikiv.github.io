@@ -35,6 +35,8 @@ body {
 }
 
 .app-header {
+  position: sticky;
+  top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +51,8 @@ body {
 
   border-radius: 50px;
   border: 2px solid var(--border-color);
+
+  z-index: 1000;
 
   .title {
     font-size: 1.5rem;
@@ -73,7 +77,7 @@ body {
     }
 
     button {
-      transition: color 0.3s ease;
+      transition: background-color 0.3s ease;
     }
   }
 }
