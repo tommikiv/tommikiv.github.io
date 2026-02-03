@@ -3,7 +3,7 @@ import './Project.css';
 interface ProjectProps {
     title: string;
     description: string;
-    image: string;
+    image?: string;
     link: string;
 }
 
