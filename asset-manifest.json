@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.10f48056.css",
-    "main.js": "/static/js/main.ec6726d7.js",
+    "main.css": "/static/css/main.eeed4fb7.css",
+    "main.js": "/static/js/main.afad088b.js",
     "static/js/453.ef42a266.chunk.js": "/static/js/453.ef42a266.chunk.js",
     "static/media/soulstealer.png": "/static/media/soulstealer.0e5b39369882cfc55191.png",
     "static/media/gamelauncher.png": "/static/media/gamelauncher.4bac3505db151fbbc779.png",
@@ -9,12 +9,12 @@
     "static/media/portrait.jpg": "/static/media/portrait.a0cb2086c66f5352d064.jpg",
     "static/media/Retroica.ttf": "/static/media/Retroica.56158ba43613463f66a7.ttf",
     "index.html": "/index.html",
-    "main.10f48056.css.map": "/static/css/main.10f48056.css.map",
-    "main.ec6726d7.js.map": "/static/js/main.ec6726d7.js.map",
+    "main.eeed4fb7.css.map": "/static/css/main.eeed4fb7.css.map",
+    "main.afad088b.js.map": "/static/js/main.afad088b.js.map",
     "453.ef42a266.chunk.js.map": "/static/js/453.ef42a266.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10f48056.css",
-    "static/js/main.ec6726d7.js"
+    "static/css/main.eeed4fb7.css",
+    "static/js/main.afad088b.js"
   ]
 }
