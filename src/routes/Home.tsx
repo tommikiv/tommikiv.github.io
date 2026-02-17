@@ -15,12 +15,11 @@ function Home() {
     return (
         <div className="home-container" id="home">
             <div className="about">
-                <div className="text-section">
-                    <h1>SOFTWARE<br /><span className="lower-title">DEVELOPER</span></h1>
-                    <p>Yo! I'm Tommi and i love creating innovative software solutions, as well as learning new technologies and improving my skills. I also enjoy making games on the side.</p>
-                </div>
                 <div className="portrait">
                     <img src={portraitImg} alt="Portrait" />
+                </div>
+                <div className="text-section">
+                    <h1 className="info">A Software Developer working on web apps and game development.</h1>
                 </div>
             </div>
             <div className="techstack">
