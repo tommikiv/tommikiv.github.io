@@ -3,11 +3,13 @@ import React from 'react';
 import './App.css';
 import Home from './routes/Home';
 import { Github, SunMoon } from 'lucide-react';
+import { useEffect } from 'react';
 
 function App() {
   const [theme, setTheme] = React.useState('dark');
 
-  React.useEffect(() => {
+  useEffect(() => {
+    document.title = "Tommi Kivikangas";
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 

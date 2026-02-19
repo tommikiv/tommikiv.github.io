@@ -8,8 +8,7 @@ import Project from '../components/Project';
 import ContactForm from '../components/ContactForm';
 
 import { Asterisk, Folder } from 'lucide-react';
-import { SiReact, SiHtml5, SiCss3, SiTypescript, SiJavascript, SiElectron, SiGit, SiGithub, SiUnity, SiGodotengine } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { SiReact, SiHtml5, SiCss3, SiTypescript, SiJavascript, SiElectron, SiGit, SiGithub, SiUnity, SiGodotengine, SiFirebase } from 'react-icons/si';
 
 function Home() {
     return (
@@ -38,7 +37,7 @@ function Home() {
                     <h2 className="tech-category">BACKEND</h2>
                     <div className="tech-list">
                         <TechItem name="Electron" icon={<SiElectron size={40} />} />
-                        <TechItem name="Java" icon={<FaJava size={40} />} />
+                        <TechItem name="Firebase" icon={<SiFirebase size={40} />} />
                     </div>
                 </div>
                 <div className="tech-container">
@@ -54,6 +53,11 @@ function Home() {
             <div className="projects" id="projects">
                 <h2 className="section-title"><Folder size={40} className="folder-icon" />PROJECTS</h2>
                 <Project
+                    title="Social App"
+                    description="A social app demo built with React Native. Authentication and data storing using Firebase. Sign up, Post and explore the feed!"
+                    link="https://github.com/tommikiv/social-app"
+                />
+                <Project
                     title="Game Launcher"
                     description="A custom game launcher application built with Electron, providing a sleek interface to manage and launch your favorite games."
                     image={gamelauncherImg}
@@ -65,7 +69,7 @@ function Home() {
                     image={soulstealerImg}
                     link="https://weakluck.itch.io/soul-stealer"
                 />
-                <Project 
+                <Project
                     title="Goofus Workshop"
                     description="A cozy 2D puzzle game made in Unity as a part of a 2 day game jam. Fix items that customers bring to your workshop!"
                     image={goofusworkshopImg}
